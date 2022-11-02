@@ -9,5 +9,9 @@
     color: $main;
     letter-spacing: 3px;
     font-weight: 900;
+    // for aligning ball icon to title
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
