@@ -3,7 +3,7 @@
   height: 8vh;
   background-color: $main;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   .title {
     color: $grass;
@@ -17,5 +17,19 @@
     .title-icon {
       margin-right: 0.5rem;
     }
+  }
+}
+.sound {
+  border: none;
+  color: $grass;
+  font-size: 3rem;
+  font-weight: 900;
+  border-radius: 7px;
+  background-color: $main;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-right: 2rem;
+  &:hover {
+    scale: 1.3;
   }
 }
