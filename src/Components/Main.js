@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { PlGame } from "./Game/PlGame";
+import { Game } from "./Game/Game";
+import { tslState } from "./Game/States/tsl";
 import { LevelChoose } from "./LevelChoose";
+import { plState } from "./Game/States/pl";
 
 export function Main() {
   const [isRender, setIsRender] = useState(true);
@@ -50,9 +52,30 @@ export function Main() {
               transition: { delay: 0, duration: 1.5 },
             }}
           >
-            <PlGame
+            <Game
               handleWin={handleWin}
               handleChangeLeague={handleChangeLeague}
+              league={plState}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {league === "tsl" && (
+          <motion.div
+            initial={{ opacity: 0, x: 500 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: 0.8 }}
+            exit={{
+              opacity: 0,
+              x: -500,
+              transition: { delay: 0, duration: 1.5 },
+            }}
+          >
+            <Game
+              handleWin={handleWin}
+              handleChangeLeague={handleChangeLeague}
+              league={tslState}
             />
           </motion.div>
         )}
