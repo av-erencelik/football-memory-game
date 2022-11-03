@@ -1,0 +1,40 @@
+.game {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+  gap: 1rem;
+  padding: 4rem;
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    margin-bottom: 2rem;
+    &:hover {
+      scale: 1.1;
+    }
+    img {
+      height: 15rem;
+      margin: 0 auto;
+    }
+    .club {
+      text-transform: uppercase;
+      text-align: center;
+      color: $main;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-top: 1rem;
+    }
+  }
+}
+.score {
+  color: $main;
+  font-size: 1.3rem;
+  display: inline-block;
+  letter-spacing: 0.1rem;
+}
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
