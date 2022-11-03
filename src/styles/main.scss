@@ -1,5 +1,6 @@
 .main {
   background-color: $grass;
-  height: 92vh;
+  min-height: 92vh;
+  max-height: 150vh;
   overflow: hidden;
 }

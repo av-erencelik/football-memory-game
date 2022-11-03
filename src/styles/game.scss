@@ -35,6 +35,21 @@
 .scores {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+}
+.changeLeague {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: $main;
+  color: $grass;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  &:hover {
+    scale: 1.1;
+  }
 }

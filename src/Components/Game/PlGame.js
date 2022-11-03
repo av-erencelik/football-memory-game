@@ -84,10 +84,9 @@ export function PlGame(props) {
   }, [score]);
 
   function handleClickLogo(e) {
-    console.log(teams);
     setIsDelayed(true);
     const id = e.target.id;
-    console.log(id);
+
     let array = teams;
     array.map((team) => {
       if (team.id === id && team.isSelected === false) {
@@ -125,6 +124,9 @@ export function PlGame(props) {
               transition: { delay: 0, duration: 1.5 },
             }}
           >
+            <button className="changeLeague" onClick={props.handleChangeLeague}>
+              CHANGE LEAGUE
+            </button>
             <h3 className="score">SCORE:{score}</h3>
             <h3 className="score">BEST SCORE:{bestScore}</h3>
           </motion.div>

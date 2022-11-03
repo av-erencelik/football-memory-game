@@ -15,7 +15,7 @@ export function LevelChoose(props) {
           transition={{ duration: 1.5 }}
           exit={{ x: -1500, opacity: 0 }}
         >
-          <h2 className="instruction">Please, Choose A League To Play!</h2>
+          <h2 className="instruction">{props.instruction}</h2>
           <div className="level-buttons">
             <div className="level-button">
               <img
