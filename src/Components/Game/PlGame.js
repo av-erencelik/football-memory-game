@@ -1,4 +1,4 @@
-import { motion, AnimatePresence, delay } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import arsenal from "../../Images/PL/arsenal.png";
@@ -98,6 +98,7 @@ export function PlGame(props) {
         }
         setScore(0);
       }
+      return null;
     });
     if (
       array.filter((team) => {
