@@ -4,6 +4,7 @@ import { Game } from "./Game/Game";
 import { tslState } from "./Game/States/tsl";
 import { LevelChoose } from "./LevelChoose";
 import { plState } from "./Game/States/pl";
+import { serieAState } from "./Game/States/serieA";
 
 export function Main() {
   const [isRender, setIsRender] = useState(true);
@@ -76,6 +77,26 @@ export function Main() {
               handleWin={handleWin}
               handleChangeLeague={handleChangeLeague}
               league={tslState}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {league === "serieA" && (
+          <motion.div
+            initial={{ opacity: 0, x: 500 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: 0.8 }}
+            exit={{
+              opacity: 0,
+              x: -500,
+              transition: { delay: 0, duration: 1.5 },
+            }}
+          >
+            <Game
+              handleWin={handleWin}
+              handleChangeLeague={handleChangeLeague}
+              league={serieAState}
             />
           </motion.div>
         )}
