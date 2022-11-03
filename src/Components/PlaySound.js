@@ -16,7 +16,7 @@ export function PlaySound() {
         playFromPosition={0}
       />
       <button onClick={handleClick} className="sound">
-        {willPlay ? <GiSoundOff /> : <GiSoundOn />}
+        {willPlay ? <GiSoundOn /> : <GiSoundOff />}
       </button>
     </>
   );
