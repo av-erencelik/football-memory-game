@@ -1,7 +1,31 @@
-# Getting Started with Create React App
+# MemoryBall Game
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description 
+
+After finishing cv generator project and learning more about function components, The Odin Project website's curriculums next project was creating a memory game. After first assignment I decided to only use function components. This is the second project that I ever created with React.js. I am happy that I was able to finish project successfully. I learnt a lot in the process.
+
+## What I Learnt
+
+1-How to create function components.
+<br>
+2-Differences between function and class components.
+<br>
+3-Basics of React Hooks.
+<br>
+4-How to use states with function components.
+<br>
+5-Using useState() and how to change states on function components.
+<br>
+6-Using lifecycle methods on function components with useEffect().
+<br>
+7-Using scss with react framework.
+<br>
+8-How to use audios on react projects [react-sound](https://www.npmjs.com/package/react-sound).
+<br>
+9-How to animate react components with using: [framer-motion](https://www.framer.com/motion/).
+<br>
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,42 +53,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
